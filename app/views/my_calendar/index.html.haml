@@ -1,0 +1,21 @@
+#warper
+  #user-panel
+    .logo
+      = image_tag("logo.png", width: "180px")
+    
+    .welcome-box
+      %p
+        = "Welcome <b>#{current_user.title}</b>!".html_safe
+        %br/
+        = "You login as: <b>#{current_user.email}</b>".html_safe
+        %br/
+        = link_to "Log out", logout_path
+    .events-box
+      %p
+      
+        = link_to "", "#", remote: true, id: "my-events", class: "user-events", data: {user: current_user.id}
+          
+  %div
+    .calendar
+  %div{id: "create_event_dialog", class: "dialog", style: "display:none;"}
+  %div{id: "event_desc_dialog", class: "dialog", style: "display:none;"}
