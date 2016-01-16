@@ -17,6 +17,5 @@
 /tmp/pids/
 /tmp/sessions/
 
-/config/database.yml
-/Gemfile.lock
+
 
