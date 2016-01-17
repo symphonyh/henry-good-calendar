@@ -1,15 +1,9 @@
 #warper
   #user-panel
-    .logo
-      = image_tag("logo.png", width: "180px")
+    
     
     .welcome-box
-      %p
-        = "Welcome <b>#{current_user.title}</b>!".html_safe
-        %br/
-        = "You login as: <b>#{current_user.email}</b>".html_safe
-        %br/
-        = link_to "Log out", logout_path
+     
     .events-box
       %p
       
